@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Connexion - Ivoire Toit</title>
+    <title>Connexion - Ivoire Toit | Portail Immobilier Certifié</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./Connexion.css">
     <link rel="icon" type="image/png" href="./IMAGE/LOGO.png">
@@ -13,10 +13,9 @@
 </head>
 
 <body>
-    <!-- Le header reste intact pour ne pas casser votre menu burger global -->
     <header>
         <div id="Logo">
-            <img src="./IMAGE/LOGO.png" alt="Logo">
+            <img src="./IMAGE/LOGO.png" alt="Logo Ivoire Toit">
         </div>
         <div class="nav-bas">
             <h3><a href="./index.html">TROUVER UN BIEN</a></h3>
@@ -25,18 +24,16 @@
             <h3><a href="./GUIDE_FONCIER.html">GUIDE FONCIER</a></h3>
         </div>
 
-        <a href="" id="Connexion" class="active" >
+        <a href="" id="Connexion" class="active">
             <button>SE CONNECTER</button>
         </a>
 
-        <!-- BOUTON BURGER -->
         <a href="#" id="openBtn" class="burger-icon">
             <span></span>
             <span></span>
             <span></span>
         </a>
 
-        <!-- MENU LATÉRAL BURGER -->
         <div id="mySidenav" class="sidenav">
             <a id="closeBtn" href="#" class="close">×</a>
             <ul>
@@ -44,38 +41,49 @@
                 <li><a href="./ Mettre_en _ocation.html">METTRE EN LOCATION</a></li>
                 <li><a href="./evaluation.html">ÉVALUER MON BIEN</a></li>
                 <li><a href="./GUIDE_FONCIER.html">GUIDE FONCIER</a></li>
-                <li><a href="./Connexion.html" style="color: #002349; font-weight: bold;" class="active" >SE CONNECTER</a></li>
+                <li><a href="./Connexion.html" style="color: #002349; font-weight: bold;" class="active">SE CONNECTER</a></li>
             </ul>
-            
         </div>
     </header>
 
-   
     <div class="Gnamien-cadre">
-        <div class="Koffi-badge">
-          <img src="./IMAGE/LOGO.png" alt="">
+
+        <!-- BADGE SITE OFFICIEL — aide Google à identifier votre site -->
+        <div class="site-officiel-badge">
+            <i class="fa-solid fa-shield-halved"></i>
+            Portail Officiel IVOIRE TOIT — dem225.github.io
         </div>
 
-        <h2 class="Bakayoko-titre">Connexion</h2>
-        <p class="Diallo-soustitre">Heureux de vous revoir sur Ivoire Toit.</p>
+        <div class="Koffi-badge">
+            <img src="./IMAGE/LOGO.png" alt="Logo Ivoire Toit">
+        </div>
 
-        <form>
+        <h2 class="Bakayoko-titre">Connexion à Ivoire Toit</h2>
+        <p class="Diallo-soustitre">Heureux de vous revoir sur notre portail immobilier ivoirien.</p>
+
+        <form action="#" method="post">
             <div class="Loukou-bloc">
-                <label class="Kouadio-label">Adresse Email</label>
+                <label class="Kouadio-label" for="email">Adresse Email</label>
                 <div class="Traore-champ">
                     <i class="fa-regular fa-envelope Kone-icone"></i>
-                    <input type="email" placeholder="nom@exemple.ci" class="Ouattara-input" required>
+                    <input type="email" id="email" name="email"
+                           placeholder="nom@exemple.ci"
+                           class="Ouattara-input" required
+                           autocomplete="email">
                 </div>
             </div>
 
             <div class="Loukou-bloc">
                 <div class="Sylla-barre">
-                    <label class="Kouadio-label">Mot de passe</label>
+                    <label class="Kouadio-label" for="password">Mot de passe</label>
                     <a href="#" class="Bamba-lien">Mot de passe oublié ?</a>
                 </div>
                 <div class="Traore-champ">
                     <i class="fa-solid fa-lock Kone-icone"></i>
-                    <input type="password" placeholder="••••••••" class="Ouattara-input" required>
+                    <input type="password" id="password" name="password"
+                           placeholder="••••••••"
+                           class="Ouattara-input" required
+                           autocomplete="current-password">
                 </div>
             </div>
 
@@ -84,29 +92,23 @@
             </button>
         </form>
 
-        <div class="Yao-separateur">
-            <span class="Meite-texte">Ou continuer avec</span>
-        </div>
-
-        <div class="Gbagbo-partage">
-            <button type="button" class="Houphouet-reseau">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" class="Ahoua-img" alt="Google"> Google
-            </button>
-            <button type="button" class="Houphouet-reseau">
-                <i class="fa-brands fa-facebook Nguessan-fb"></i> Facebook
-            </button>
-        </div>
-
         <p class="Coulibaly-bas">
             Nouveau sur Ivoire Toit ? <a href="#" class="Tanoh-inscription">Créer un compte</a>
         </p>
 
         <p class="Aka-mentions">
-            En vous connectant, vous acceptez nos <a href="#">Conditions d'Utilisation</a> et notre <a href="#">Politique de Confidentialité</a>.
+            En vous connectant, vous acceptez nos
+            <a href="#">Conditions d'Utilisation</a> et notre
+            <a href="#">Politique de Confidentialité</a>.
         </p>
+
+        <!-- PIED DE PAGE IDENTITÉ — renforce l'identité du site -->
+        <div class="identite-footer">
+            <p>© 2024 <strong>IVOIRE TOIT</strong> — Portail Immobilier Certifié Côte d'Ivoire</p>
+            <p>📍 Plateau, Abidjan &nbsp;|&nbsp; 📞 +225 01 40 43 53 50</p>
+        </div>
     </div>
 
-    <!-- Bouton support renommé Gohou -->
     <div class="Gohou-support">
         <i class="fa-solid fa-headset"></i>
     </div>
