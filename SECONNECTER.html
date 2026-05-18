@@ -13,7 +13,6 @@
 </head>
 
 <body>
-    <!-- Le header reste intact pour ne pas casser votre menu burger global -->
     <header>
         <div id="Logo">
             <img src="./IMAGE/LOGO.png" alt="Logo">
@@ -50,15 +49,15 @@
 
     <div class="Gnamien-cadre">
         <div class="Koffi-badge">
-            <img src="./IMAGE/LOGO.png" alt="Logo Ivoire Toit">
+          <img src="./IMAGE/LOGO.png" alt="Logo">
         </div>
 
         <h2 class="Bakayoko-titre">Connexion</h2>
         <p class="Diallo-soustitre">Heureux de vous revoir sur Ivoire Toit.</p>
 
-        <!-- Correction ici : Ajout d'une méthode POST requise pour la sécurité des données -->
         <form method="POST" action="">
-            <div class="Loukou-bloc">
+            <!-- Changement de classe ici pour éviter le mot "bloc" -->
+            <div class="le-groupe-saisie">
                 <label class="Kouadio-label">Adresse Email</label>
                 <div class="Traore-champ">
                     <i class="fa-regular fa-envelope Kone-icone"></i>
@@ -66,7 +65,8 @@
                 </div>
             </div>
 
-            <div class="Loukou-bloc">
+            <!-- Changement de classe ici -->
+            <div class="le-groupe-saisie">
                 <div class="Sylla-barre">
                     <label class="Kouadio-label">Mot de passe</label>
                     <a href="#" class="Bamba-lien">Mot de passe oublié ?</a>
@@ -86,7 +86,8 @@
             <span class="Meite-texte">Ou continuer avec</span>
         </div>
 
-        <div class="Gbagbo-partage">
+        <!-- Changement crucial ici : On supprime la classe "partage" qui imitait un widget de pub -->
+        <div class="les-boutons-sociaux">
             <button type="button" class="Houphouet-reseau">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" class="Ahoua-img" alt="Google"> Google
             </button>
@@ -104,7 +105,6 @@
         </p>
     </div>
 
-    <!-- Bouton support -->
     <div class="Gohou-support">
         <i class="fa-solid fa-headset"></i>
     </div>
