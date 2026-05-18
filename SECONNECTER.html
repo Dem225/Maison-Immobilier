@@ -8,28 +8,30 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./SECONNECTER.css">
     <link rel="icon" type="image/png" href="./IMAGE/LOGO.png">
-    <script src="./menu.js"></script>
+    <script src="./menu.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
+
     <header>
         <div id="Logo">
-            <img src="./IMAGE/LOGO.png" alt="Logo">
+            <img src="./IMAGE/LOGO.png" alt="Logo Ivoire Toit">
         </div>
-        <div class="nav-bas">
+
+        <nav class="nav-bas">
             <h3><a href="./index.html">TROUVER UN BIEN</a></h3>
             <h3><a href="./Mettre_en_location.html">METTRE EN LOCATION</a></h3>
             <h3><a href="./evaluation.html">ÉVALUER MON BIEN</a></h3>
             <h3><a href="./GUIDE_FONCIER.html">GUIDE FONCIER</a></h3>
-        </div>
+        </nav>
 
-        <a href="" id="Connexion" class="active" >
-            <button>CONNECTER</button>
+        <a href="./SECONNECTER.html" id="Connexion" class="active">
+            <button type="button">CONNECTER</button>
         </a>
 
         <!-- BOUTON BURGER -->
-        <a href="#" id="openBtn" class="burger-icon">
+        <a href="#" id="openBtn" class="burger-icon" aria-label="Ouvrir le menu">
             <span></span>
             <span></span>
             <span></span>
@@ -37,62 +39,67 @@
 
         <!-- MENU LATÉRAL BURGER -->
         <div id="mySidenav" class="sidenav">
-            <a id="closeBtn" href="#" class="close">×</a>
+            <a id="closeBtn" href="#" class="close" aria-label="Fermer le menu">×</a>
             <ul>
                 <li><a href="./index.html">TROUVER UN BIEN</a></li>
                 <li><a href="./Mettre_en_location.html">METTRE EN LOCATION</a></li>
                 <li><a href="./evaluation.html">ÉVALUER MON BIEN</a></li>
                 <li><a href="./GUIDE_FONCIER.html">GUIDE FONCIER</a></li>
+                <li><a href="./SECONNECTER.html">SE CONNECTER</a></li>
             </ul>
         </div>
     </header>
 
-    <div class="Gnamien-cadre">
-        <div class="Koffi-badge">
-          <img src="./IMAGE/LOGO.png" alt="Logo">
+    <div class="cadre">
+
+        <div class="badge">
+            <img src="./IMAGE/LOGO.png" alt="Logo">
         </div>
 
         <h2 class="Bakayoko-titre">Connexion</h2>
         <p class="Diallo-soustitre">Heureux de vous revoir sur Ivoire Toit.</p>
 
         <form method="POST" action="">
-            <!-- Changement de classe ici pour éviter le mot "bloc" -->
+
             <div class="le-groupe-saisie">
-                <label class="Kouadio-label">Adresse Email</label>
+                <label for="Email" class="Kouadio-label">Adresse Email</label>
                 <div class="Traore-champ">
                     <i class="fa-regular fa-envelope Kone-icone"></i>
-                    <input type="email" name="email" placeholder="nom@exemple.ci" class="Ouattara-input" required>
+<input type="email" id="Email" name="Email" placeholder="nom@exemple.ci" class="Ouattara-input" autocomplete="email" required>
                 </div>
             </div>
 
-            <!-- Changement de classe ici -->
+            <!-- Champ Mot de passe -->
             <div class="le-groupe-saisie">
                 <div class="Sylla-barre">
-                    <label class="Kouadio-label">Mot de passe</label>
+                    <label for="password" class="Kouadio-label">Mot de passe</label>
                     <a href="#" class="Bamba-lien">Mot de passe oublié ?</a>
                 </div>
                 <div class="Traore-champ">
                     <i class="fa-solid fa-lock Kone-icone"></i>
-                    <input type="password" name="password" placeholder="••••••••" class="Ouattara-input" required>
+<input type="password" id="password" name="password" placeholder="••••••••" class="Ouattara-input" autocomplete="current-password" required>
                 </div>
             </div>
 
+            <!-- Bouton de connexion -->
             <button type="submit" class="Fofana-bouton">
                 Se connecter <i class="fa-solid fa-arrow-right-to-bracket"></i>
             </button>
+
         </form>
 
         <div class="Yao-separateur">
             <span class="Meite-texte">Ou continuer avec</span>
         </div>
 
-        <!-- Changement crucial ici : On supprime la classe "partage" qui imitait un widget de pub -->
         <div class="les-boutons-sociaux">
             <button type="button" class="Houphouet-reseau">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" class="Ahoua-img" alt="Google"> Google
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" class="Ahoua-img" alt="Google">
+                Google
             </button>
             <button type="button" class="Houphouet-reseau">
-                <i class="fa-brands fa-facebook Nguessan-fb"></i> Facebook
+                <i class="fa-brands fa-facebook Nguessan-fb"></i>
+                Facebook
             </button>
         </div>
 
@@ -103,11 +110,13 @@
         <p class="Aka-mentions">
             En vous connectant, vous acceptez nos <a href="#">Conditions d'Utilisation</a> et notre <a href="#">Politique de Confidentialité</a>.
         </p>
+
     </div>
 
-    <div class="Gohou-support">
+    <!-- Bouton support -->
+    <div class="Gohou-support" role="button" aria-label="Contacter le support">
         <i class="fa-solid fa-headset"></i>
     </div>
-</body>
 
+</body>
 </html>
