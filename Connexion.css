@@ -1,0 +1,368 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+    position: relative;
+    min-height: 100vh;
+    background-color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* --- HEADER --- */
+header {
+    min-height: 90px;
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+
+#Logo {
+    height: 70px;
+    width: auto;
+}
+
+#Logo img {
+    height: 100%;
+    width: auto;
+}
+
+.nav-bas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-bas h3 a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 15px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-bas h3 a:hover {
+    color: #d97706;
+}
+
+#Connexion {
+    width: auto;
+}
+
+#Connexion button {
+    padding: 12px 24px;
+    background-color: #002349;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+
+#openBtn {
+    display: none;
+}
+
+.sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    background-color: #f8f9fa;
+    padding-top: 60px;
+}
+
+.sidenav ul {
+    list-style-type: none;
+}
+
+.sidenav a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #333333;
+    font-weight: bold;
+}
+
+.sidenav a:hover {
+    color: #d97706;
+    background-color: #eeeeee;
+}
+
+.sidenav.active {
+    left: 0;
+}
+
+.sidenav .close {
+    font-size: 36px;
+    color: #000000;
+    cursor: pointer;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.burger-icon span {
+    display: block;
+    width: 30px;
+    height: 4px;
+    background-color: #002349;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+
+
+/* --- BLOC PRINCIPAL GNAMIEN --- */
+.Gnamien-cadre {
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    padding: 0 20px;
+}
+
+.Koffi-badge {
+    width: 70px;
+    height: 70px;
+    background-color: #051126;
+    color: #ffffff;
+    border-radius: 15px;
+    margin: 0 auto 25px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px; 
+}
+.Koffi-badge img{
+    height: 100%;
+    width: 100%;
+}
+.Bakayoko-titre {
+    font-size: 22px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.Diallo-soustitre {
+    font-size: 15px;
+    color: #4a5568;
+    margin-bottom: 35px;
+}
+
+/* --- FORMULAIRE LOUKOU --- */
+.Loukou-bloc {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.Kouadio-label {
+    font-size: 15px;
+    color: #000000;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.Sylla-barre {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.Bamba-lien {
+    font-size: 14px;
+    color: #d97706;
+    text-decoration: none;
+}
+
+/* --- CHAMPS TRAORE ET INPUTS OUATTARA --- */
+.Traore-champ {
+    width: 100%;
+    height: 50px;
+    position: relative;
+}
+
+.Kone-icone {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #a0aec0;
+    font-size: 16px;
+}
+
+.Ouattara-input {
+    width: 100%;
+    height: 100%;
+    padding-left: 45px;
+    padding-right: 15px;
+    font-size: 15px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    background-color: #f8fafc;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.Ouattara-input:focus {
+    border-color: #051126;
+}
+
+/* --- BOUTON FOFANA --- */
+.Fofana-bouton {
+    width: 100%;
+    height: 50px;
+    background-color: #051126;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+/* --- SÉPARATEUR YAO --- */
+.Yao-separateur {
+    width: 100%;
+    height: 1px;
+    background-color: #e2e8f0;
+    margin: 35px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Meite-texte {
+    background-color: #ffffff;
+    padding: 0 15px;
+    color: #718096;
+    font-size: 14px;
+}
+
+/* --- RÉSEAUX SOCIAUX GBAGBO & HOUPHOUET --- */
+.Gbagbo-partage {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 35px;
+}
+
+.Houphouet-reseau {
+    flex: 1;
+    height: 45px;
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #4a5568;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Ahoua-img {
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+}
+
+.Nguessan-fb {
+    color: #1877f2;
+    font-size: 18px;
+    margin-right: 8px;
+}
+
+/* --- TEXTES DU BAS --- */
+.Coulibaly-bas {
+    font-size: 15px;
+    color: #4a5568;
+    margin-bottom: 40px;
+}
+
+.Tanoh-inscription {
+    color: #000000;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+.Aka-mentions {
+    font-size: 12px;
+    color: #718096;
+    line-height: 1.5;
+}
+
+.Aka-mentions a {
+    color: #718096;
+}
+
+/* --- SUPPORT GOHOU --- */
+.Gohou-support {
+    width: 55px;
+    height: 55px;
+    background-color: #046a38;
+    color: #ffffff;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 99;
+}
+
+/* --- RESPONSIVE MOBILE --- */
+@media screen and (max-width: 768px) {
+    header {
+        padding: 15px 5%;
+    }
+    .nav-bas, #Connexion {
+        display: none !important;
+    }
+    #openBtn {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .Gbagbo-partage {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .Houphouet-reseau {
+        width: 100%;
+    }
+}
+
+

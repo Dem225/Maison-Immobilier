@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IVOIRE_IMMO - Évaluation</title>
+    <link rel="icon" type="image/png" href="./IMAGE/LOGO.png">
+    <link rel="stylesheet" href="./evaluation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="./style.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <script src="./menu.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div id="Logo">
+            <img src="./IMAGE/LOGO.png" alt="Logo">
+        </div>
+
+   
+        <div class="nav-bas">
+            <h3><a href="./index.html">TROUVER UN BIEN</a></h3>
+            <h3><a href="./ Mettre_en _ocation.html">METTRE EN LOCATION</a></h3>
+            <h3><a href="./evaluation.html"  class="active" >ÉVALUER MON BIEN</a></h3>
+            <h3><a href="./GUIDE_FONCIER.html">GUIDE FONCIER</a></h3>
+        </div>
+
+     
+        <a href="./Connexion.html" id="Connexion">
+            <button>SE CONNECTER</button>
+        </a>
+
+
+        <a href="#" id="openBtn" class="burger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+
+        <!-- LE MENU LATÉRAL (Mobile) -->
+        <div id="mySidenav" class="sidenav">
+            <a id="closeBtn" href="#" class="close">×</a>
+            <ul>
+                <li><a href="./index.html">TROUVER UN BIEN</a></li>
+                <li><a href="./ Mettre_en _ocation.html">METTRE EN LOCATION</a></li>
+                <li><a href="./evaluation.html"  class="active" >ÉVALUER MON BIEN</a></li>
+                <li><a href="./GUIDE_FONCIER.html">GUIDE FONCIER</a></li>
+                <li><a href="./Connexion.html" style="color: #002349; font-weight: bold;">SE CONNECTER</a></li>
+            </ul>
+             <a href="./Connexion.html" id="Connexion">
+            <button>SE CONNECTER</button>
+        </a>
+        </div>
+    </header>
+
+    <main id="Acceuil">
+        <h1>Estimer la valeur de votre bien</h1>
+        <p>Obtenez une évaluation précise et certifiée de votre propriété en quelques clics grâce à notre expertise du
+            marché ivoirien.</p>
+    </main>
+
+    <div id="ConTte">
+        <div id="Bar">
+            <div class="Etape">
+                <div class="Chiffre-classe">1</div>
+                <div class="exte">
+                    Informations de base<br>
+                    <span>Type de bien et localisation</span>
+                </div>
+            </div>
+            <div class="Etape">
+                <div class="Chiffre">2</div>
+                <div class="exte">
+                    Caractéristiques<br>
+                    <span>Surface et pièces</span>
+                </div>
+            </div>
+            <div class="Etape">
+                <div class="Chiffre">3</div>
+                <div class="exte">
+                    Visualisation<br>
+                    <span>Photos et documents</span>
+                </div>
+            </div>
+
+            <div id="Sceau">
+                PLATEFORME VÉRIFIÉE ACD
+                <p>Nos estimations s'appuient sur les bases de données notariales.</p>
+            </div>
+        </div>
+
+        <div id="Formul">
+            <div class="Un-Groupe">
+                <label>Type de propriété</label>
+                <div class="Les-Options">
+                    <div class="Un-Choix Ce-Choix">Villa</div>
+                    <div class="Un-Choix">Appartement</div>
+                    <div class="Un-Choix">Terrain</div>
+                </div>
+            </div>
+
+            <div class="Une-Ligne">
+                <div class="La-Colonne">
+                    <label>Ville</label>
+                    <select class="Un-Champ">
+                        <option value="abengourou">Abengourou</option>
+                        <option value="abidjan">Abidjan</option>
+                        <option value="adzoppe">Adzopé</option>
+                        <option value="bondoukou">Bondoukou</option>
+                        <option value="bouafle">Bouaflé</option>
+                        <option value="bouake">Bouaké</option>
+                        <option value="dabou">Dabou</option>
+                        <option value="daloa">Daloa</option>
+                        <option value="danane">Danané</option>
+                        <option value="divo">Divo</option>
+                        <option value="duekoue">Duékoué</option>
+                        <option value="ferkessedougou">Ferkessédougou</option>
+                        <option value="gagnoa">Gagnoa</option>
+                        <option value="grand-bassam">Grand-Bassam</option>
+                        <option value="guiglo">Guiglo</option>
+                        <option value="katiola">Katiola</option>
+                        <option value="korhogo">Korhogo</option>
+                        <option value="man">Man</option>
+                        <option value="san-pedro">San Pedro</option>
+                        <option value="soubre">Soubré</option>
+                        <option value="yamoussoukro">Yamoussoukro</option>
+                        <option value="zebi">Zebi</option>
+                    </select>
+                </div>
+                <div class="La-Colonne">
+                    <label>Quartier</label>
+                    <select class="Un-Champ">
+                        <option>Cocody</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="Une-Ligne">
+                <div class="La-Colonne">
+                    <label>Nombre de pièces</label>
+                    <select class="Un-Champ">
+                        <option>Studio / 1 pièce</option>
+                    </select>
+                </div>
+                <div class="La-Colonne">
+                    <label>Surface (m²)</label>
+                    <input type="text" class="Champd" placeholder="Ex: 120">
+                </div>
+            </div>
+
+            <div id="La-Zone-Upload">
+                <p>Glissez vos photos ici ou cliquez pour parcourir vos fichiers</p>
+            </div>
+
+            <button id="Le-Bouton">Demander une estimation</button>
+        </div>
+    </div>
+
+    <div class="confince">
+        <h4>Pourquoi nous faire confiance ?</h4>
+    </div>
+
+    <div id="Les-Cartes">
+        <div class="Une-Carte">
+            <div class="Icone"><i class="fa-solid fa-award"></i></div>
+            <h3>Vérification ACD</h3>
+            <p>Seule plateforme intégrant les données officielles de l'Arrêté de Concession Définitive pour sécuriser
+                vos estimations.</p>
+        </div>
+
+        <div class="Une-Carte">
+            <div class="Icone"><i class="fa-solid fa-chart-column"></i></div>
+            <h3>Données Temps Réel</h3>
+            <p>Nos algorithmes analysent les dernières transactions du marché à Cocody et Marcory en temps réel.</p>
+        </div>
+
+        <div class="Une-Carte">
+            <div class="Icone"><i class="fa-solid fa-atom"></i></div>
+            <h3>Expertise Humaine</h3>
+            <p>Chaque estimation digitale est revue par un expert immobilier local certifié avant l'envoi du rapport
+                final.</p>
+        </div>
+    </div>
+
+    <div id="monial">
+        <div class="testi">
+            <p>"Grâce à l'estimation certifiée d'IVOIRE TOIT, j'ai pu vendre ma villa à Angré au juste prix du marché en
+                moins de trois semaines. La clarté sur le statut ACD a tout changé pour les acheteurs."</p>
+        </div>
+    </div>
+
+    <div id="Avantages">
+        <div class="carte">
+            <div class="icone"><i class="fa-solid fa-scale-balanced"></i></div>
+            <div class="infos">
+                <span class="titre">Légal</span>
+                <span class="sous">Conformité ACD stricte</span>
+            </div>
+        </div>
+
+        <div class="carte">
+            <div class="icone"><i class="fa-solid fa-location-pin-lock"></i></div>
+            <div class="infos">
+                <span class="titre">Sécurisé</span>
+                <span class="sous">Protection des données</span>
+            </div>
+        </div>
+
+        <div class="carte">
+            <div class="icone"><i class="fa-solid fa-gauge-high"></i></div>
+            <div class="infos">
+                <span class="titre">Rapide</span>
+                <span class="sous">Estimation sous 48h</span>
+            </div>
+        </div>
+
+        <div class="carte">
+            <div class="icone"><i class="fa-brands fa-studiovinari"></i></div>
+            <div class="infos">
+                <span class="titre">Accompagnement</span>
+                <span class="sous">Conseil personnalisé</span>
+            </div>
+        </div>
+    </div>
+   <footer id="PiedDePage">
+        <div class="ConteneurPrincipal">
+            <div class="N_guessan_Section">
+                <div class="LOGZO">
+                    <img src="./IMAGE/LOGO.png" alt="Ivoire Toit">
+                </div>
+                <p class="Description">Le premier portail immobilier certifié en Côte d'Ivoire. Sécurité, Transparence,
+                    Modernité.</p>
+                <div class="ReseauxSociaux">
+                    <div class="RondSocial"></div>
+                    <div class="RondSocial"></div>
+                </div>
+            </div>
+
+            <div class="Bamba_Colonne">
+                <h3>Plateforme</h3>
+                <ul>
+                    <li>Trouver un bien</li>
+                    <li>Mettre en location</li>
+                    <li>Évaluer mon bien</li>
+                    <li>Agences partenaires</li>
+                </ul>
+            </div>
+
+            <div class="Diomande_Colonne">
+                <h3>Ressources</h3>
+                <ul>
+                    <li>Tout savoir sur l'ACD</li>
+                    <li>Prix du marché</li>
+                    <li>Guide Foncier</li>
+                    <li>Blog immobilier</li>
+                </ul>
+            </div>
+
+            <div class="Cisse_Colonne">
+                <h3>Contact</h3>
+                <ul>
+                    <li>+225 01 02 03 04 05</li>
+                    <li>contact@ivoiretoit.ci</li>
+                    <li>Plateau, Immeuble CCIA, Abidjan</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="lolar">
+            <p>© 2024 IVOIRE TOIT - Immobilier Certifié. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+1. Identification du Problème : Le Manque de Transparence et de Sécurité
+Bien que l'offre soit présente, le secteur souffre de deux freins majeurs :
+
+L'insécurité transactionnelle : Difficulté de vérifier si un terrain ou un logement possède un ACD (Arrêté de Concession Définitive) réel.
+
+L'accessibilité aux logements sociaux : Les citoyens ont du mal à trouver des offres fiables qui correspondent à leur budget sans passer par une multitude d'intermédiaires informels.
+
+2. La Solution : Plateforme "IVOIRE TOIT"
+Le but est de créer un site web qui agit comme un tiers de confiance. Ce ne sera pas juste un site d'annonces, mais une plateforme de certification et de mise en relation directe.
+
+Les axes de la solution :
+Vérification de l'ACD : Un indicateur visuel sur chaque annonce montrant que le document foncier a été pré-vérifié.
+
+Calculateur de Crédit Local : Intégrer les taux des banques ivoiriennes pour aider l'utilisateur à voir ce qu'il peut réellement acheter.
+
+Interface Mobile-First : Design ultra-léger et fluide pour une consultation rapide sur smartphone.
+
+3. Architecture du Site Web (Plan de Développement)
+A. Page d'Accueil (Landing Page)
+Hero Section : Barre de recherche intuitive (Ville, Quartier, Budget, Type de contrat).
+
+Section "Confiance" : Chiffres clés (Nombre d'agences vérifiées, annonces certifiées).
+
+Call to Action : "Devenir Propriétaire en toute sécurité".
+
+B. Page de Listing (Recherche)
+Système de filtres avancés.
+
+Affichage par cartes (Cards) avec photos haute définition et badges de certification.
+
+Géolocalisation : Intégration d'une carte interactive (Leaflet ou Google Maps) pour situer les biens.
+
+C. Page de Détails du Bien
+Description technique complète.
+
+Bouton de contact direct via WhatsApp (très utilisé en Côte d'Ivoire).
+
+Galerie d'images et visite virtuelle 360° (pour limiter les déplacements inutiles).
+
+D. Espace Client / Promoteur
+Tableau de bord pour suivre les visites ou gérer les annonces.
+
+Système de notation des agents immobiliers.
+
+4. Stack Technique Recommandée
+Pour un rendu professionnel et performant, voici ce que je te suggère d'utiliser :
+
+Frontend : HTML5 / CSS3 (avec Flexbox/Grid pour la réactivité mobile) et un peu de JavaScript pour l'interactivité.
+
+Backend (Optionnel pour le début) : Python avec Flask ou Django pour gérer la base de données des logements.
+
+Stockage : Un fichier JSON ou une base de données SQLite pour répertorier les annonces.
+
+Prochaine étape :
+Veux-tu que je commence à te générer le code HTML/CSS de la page d'accueil ou préfères-tu que l'on approfondisse une fonctionnalité spécifique comme le système de filtrage

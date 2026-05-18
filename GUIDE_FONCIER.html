@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IVOIRE_IMMO - Déposer un bien</title>
+    <link rel="icon" type="image/png" href="./IMAGE/LOGO.png">
+    <link rel="stylesheet" href="./GUIDE_FONCIER.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="./menu.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div id="Logo">
+            <img src="./IMAGE/LOGO.png" alt="Logo">
+        </div>
+
+
+        <div class="nav-bas">
+            <h3><a href="./index.html">TROUVER UN BIEN</a></h3>
+            <h3><a href="./ Mettre_en _ocation.html">METTRE EN LOCATION</a></h3>
+            <h3><a href="./evaluation.html">ÉVALUER MON BIEN</a></h3>
+            <h3><a href="./GUIDE_FONCIER.html" class="active" >FONCIER GUIDES</a></h3>
+        </div>
+
+
+        <a href="./Connexion.html" id="Connexion">
+            <button>SE CONNECTER</button>
+        </a>
+
+    
+        <a href="#" id="openBtn" class="burger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+
+        <!-- LE MENU LATÉRAL (Mobile) -->
+        <div id="mySidenav" class="sidenav">
+            <a id="closeBtn" href="#" class="close">×</a>
+            <ul>
+                <li><a href="./index.html">TROUVER UN BIEN</a></li>
+                <li><a href="./ Mettre_en _ocation.html">METTRE EN LOCATION</a></li>
+                <li><a href="./evaluation.html">ÉVALUER MON BIEN</a></li>
+                <li><a href="./GUIDE_FONCIER.html"  class="active" >GUIDE FONCIER</a></li>
+                <li><a href="./Connexion.html" style="color: #002349; font-weight: bold;">SE CONNECTER</a></li>
+            </ul>
+                <a href="./Connexion.html" id="Connexion">
+            <button>SE CONNECTER</button>
+        </a>
+        </div>
+    </header>
+
+    <div id="Stepper">
+        <div class="etape">
+            <div class="cercle actif">1</div>
+            <span class="label">Bien</span>
+        </div>
+        <div class="ligne"></div>
+        <div class="etape">
+            <div class="cercle actif">2</div>
+            <span class="label">Localisation</span>
+        </div>
+        <div class="ligne"></div>
+        <div class="etape">
+            <div class="cercle gris">3</div>
+            <span class="label">Détails</span>
+        </div>
+        <div class="ligne"></div>
+        <div class="etape">
+            <div class="cercle gris">4</div>
+            <span class="label">Médias</span>
+        </div>
+    </div>
+
+    <div id="Page">
+        <div id="Gauche">
+            <div class="bloc">
+                <h3>Informations de base</h3>
+                <div class="entree">
+                    <label>Titre de l'annonce</label>
+                    <input type="text" placeholder="Ex: Magnifique Villa avec vue sur lagune">
+                </div>
+                <div class="grille">
+                    <div class="entree">
+                        <label>Type de bien</label>
+                        <select>
+                            <option>Villa</option>
+                            <option>Appartement</option>
+                            <option>Terrain</option>
+                        </select>
+                    </div>
+                    <div class="entree">
+                        <label>Prix (FCFA)</label>
+                        <input type="number" placeholder="0">
+                    </div>
+                </div>
+            </div>
+
+            <div class="bloc_2">
+                <h3>Localisation & Certification</h3>
+                <div class="grille">
+                    <div class="entree">
+                        <label>Commune</label>
+                        <select id="communeSelect" onchange="changerCommune()">
+                            <option value="Abobo, Abidjan, CI">Abobo</option>
+                            <option value="Adjamé, Abidjan, CI">Adjamé</option>
+                            <option value="Anyama, Abidjan, CI">Anyama</option>
+                            <option value="Attécoubé, Abidjan, CI">Attécoubé</option>
+                            <option value="Bingerville, Abidjan, CI">Bingerville</option>
+                            <option value="Cocody, Abidjan, CI">Cocody</option>
+                            <option value="Koumassi, Abidjan, CI">Koumassi</option>
+                            <option value="Marcory, Abidjan, CI">Marcory</option>
+                            <option value="Plateau, Abidjan, CI">Plateau</option>
+                            <option value="Port-Bouët, Abidjan, CI">Port-Bouët</option>
+                            <option value="Songon, Abidjan, CI">Songon</option>
+                            <option value="Treichville, Abidjan, CI">Treichville</option>
+                            <option value="Yopougon, Abidjan, CI">Yopougon</option>
+                            <option value="Yamoussoukro, CI">Yamoussoukro</option>
+                            <option value="Bouaké, CI">Bouaké</option>
+                            <option value="San-Pédro, CI">San-Pédro</option>
+                            <option value="Korhogo, CI">Korhogo</option>
+                            <option value="Daloa, CI">Daloa</option>
+                            <option value="Man, CI">Man</option>
+                            <option value="Gagnoa, CI">Gagnoa</option>
+                            <option value="Abengourou, CI">Abengourou</option>
+                            <option value="Soubré, CI">Soubré</option>
+                            <option value="Odienné, CI">Odienné</option>
+                            <option value="Bondoukou, CI">Bondoukou</option>
+                            <option value="Agboville, CI">Agboville</option>
+                            <option value="Dimbokro, CI">Dimbokro</option>
+                            <option value="Ferkessédougou, CI">Ferkessédougou</option>
+                            <option value="Grand-Bassam, CI">Grand-Bassam</option>
+                        </select>
+                    </div>
+                    <div class="entree">
+                        <label>Quartier</label>
+                        <input type="text" placeholder="Ex: Angré 7ème Tranche">
+                    </div>
+                </div>
+
+                <div id="Map">
+                    <div class="map_coner">
+                        <iframe id="maCarteIframe" src="https://maps.google.com/maps?q=Abidjan&z=12&output=embed"
+                            allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+
+                <div id="Securite">
+                    <div class="infos">
+                        <strong style="display: block;">Gage de sécurité : Certification ACD</strong>
+                        <span style="font-size: 12px; color: #666;">Les annonces avec ACD reçoivent 3x plus de
+                            contacts.</span>
+                    </div>
+                    <button id="Charger">Charger l'ACD</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="Droite">
+            <div id="Carte">
+                <div class="Grand_box">
+                    <div class="Image_fix">
+                        <span class="acteur-Tag">VENTE</span>
+                        <span class="filtre-ACD">ACD VÉRIFIÉ</span>
+                        <img src="./IMAGE/Maision_3.jpeg" alt="Villa">
+                    </div>
+                    <div class="Infos-text">
+                        <div class="TEXTETE">
+                            <h3>Villa Moderne 5 Pièces</h3>
+                        </div>
+                        <p class="Localisation">Cocody, Ambassade</p>
+                        <div class="detaille">
+                            <span>Chambre : 4</span>
+                            <span>Douche : 3</span>
+                            <span>Superficie : 450 m²</span>
+                        </div>
+                        <div class="info">
+                            <span class="Prix">30M <small>FCFA/MOIS</small></span>
+                            <button class="Btn-Consulter">
+                                <p>Consulter</p>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Aperçu">
+                <div class="VICION">
+                    <div class="IConei">i</div>
+                    <strong>Aperçu en direct</strong>
+                </div>
+                <p style="margin-top: 10px; font-size: 12px; opacity: 0.8; line-height: 1.4;">
+                    C'est ainsi que votre annonce apparaîtra dans les résultats de recherche. Assurez-vous que les
+                    informations sont correctes.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <section id="Blhe">
+        <h2 id="Tinipal">Caractéristiques & Commodités</h2>
+        <div class="Limple">
+            <div class="Coree">
+                <label class="Pxte"><i class="fa-solid fa-hotel"></i> Chambres</label>
+                <div id="ReglageChambres" class="CadreSaisie">
+                    <button type="button" class="Touche">-</button>
+                    <input type="number" value="0" class="ZoneChiffre">
+                    <button type="button" class="Touche FondSombre">+</button>
+                </div>
+            </div>
+            <div class="Coree">
+                <label class="Pxte"><i class="fa-solid fa-shower"></i> Douches</label>
+                <div id="ReglageDouches" class="CadreSaisie">
+                    <button type="button" class="Touche">-</button>
+                    <input type="number" value="0" class="ZoneChiffre">
+                    <button type="button" class="Touche FondSombre">+</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="GrilleOptions">
+            <div class="BlocIcone">
+                <div class="Symbole"><i class="fa-solid fa-person-swimming"></i></div>
+                <div class="NomOption">Piscine</div>
+            </div>
+            <div class="BlocIcone Choisi">
+                <div class="Symbole"><i class="fa-solid fa-square-parking"></i></div>
+                <div class="NomOption">Parking</div>
+            </div>
+            <div class="BlocIcone">
+                <div class="Symbole"><i class="fa-solid fa-seedling"></i></div>
+                <div class="NomOption">Jardin</div>
+            </div>
+            <div class="BlocIcone">
+                <div class="Symbole"><i class="fa-solid fa-user-shield"></i></div>
+                <div class="NomOption">Sécurité 24/7</div>
+            </div>
+        </div>
+
+        <div class="GrilleOptions">
+            <div class="BlocIcone">
+                <div class="Symbole"><i class="fa-solid fa-wifi"></i></div>
+                <div class="NomOption">Fibre Optique</div>
+            </div>
+            <div class="BlocIcone">
+                <div class="Symbole"><i class="fa-solid fa-temperature-arrow-up"></i></div>
+                <div class="NomOption">Climatisation</div>
+            </div>
+            <div class="BlocIcone">
+                <div class="Symbole"><i class="fa-solid fa-recycle"></i></div>
+                <div class="NomOption">Garage</div>
+            </div>
+            <div class="BlocIcone">
+                <div class="Symbole"><i class="fa-solid fa-city"></i></div>
+                <div class="NomOption">FENÊTRE</div>
+            </div>
+        </div>
+    </section>
+   <footer id="PiedDePage">
+        <div class="ConteneurPrincipal">
+            <div class="N_guessan_Section">
+                <div class="LOGZO">
+                    <img src="./IMAGE/LOGO.png" alt="Ivoire Toit">
+                </div>
+                <p class="Description">Le premier portail immobilier certifié en Côte d'Ivoire. Sécurité, Transparence,
+                    Modernité.</p>
+                <div class="ReseauxSociaux">
+                    <div class="RondSocial"></div>
+                    <div class="RondSocial"></div>
+                </div>
+            </div>
+
+            <div class="Bamba_Colonne">
+                <h3>Plateforme</h3>
+                <ul>
+                    <li>Trouver un bien</li>
+                    <li>Mettre en location</li>
+                    <li>Évaluer mon bien</li>
+                    <li>Agences partenaires</li>
+                </ul>
+            </div>
+
+            <div class="Diomande_Colonne">
+                <h3>Ressources</h3>
+                <ul>
+                    <li>Tout savoir sur l'ACD</li>
+                    <li>Prix du marché</li>
+                    <li>Guide Foncier</li>
+                    <li>Blog immobilier</li>
+                </ul>
+            </div>
+
+            <div class="Cisse_Colonne">
+                <h3>Contact</h3>
+                <ul>
+                    <li>+225 01 02 03 04 05</li>
+                    <li>contact@ivoiretoit.ci</li>
+                    <li>Plateau, Immeuble CCIA, Abidjan</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="lolar">
+            <p>© 2024 IVOIRE TOIT - Immobilier Certifié. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script>
+        function changerCommune() {
+            const select = document.getElementById('communeSelect');
+            const commune = select.value;
+            const iframe = document.getElementById('maCarteIframe');
+            const nouveauLien = `https://maps.google.com/maps?q=${encodeURIComponent(commune)}&z=14&output=embed`;
+            iframe.src = nouveauLien;
+        }
+    </script>
+</body>
+
+</html>

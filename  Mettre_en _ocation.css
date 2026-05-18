@@ -1,0 +1,496 @@
+/* --- BASES & RESET --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f4f7f9;
+    font-family: "Arial", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* --- HEADER --- */
+header {
+    min-height: 90px;
+    width: 100%;
+    padding: 10px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+#Logo {
+    height: auto;
+    width: 80px;
+    max-height: 70px;
+}
+
+#Logo img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.nav-bas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.nav-bas h3 a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#Connexion {
+    height: 40px;
+    width: 140px;
+}
+
+#Connexion button {
+    height: 100%;
+    width: 100%;
+    background-color: #002349;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+}
+
+/* --- TEXTES & ANCRES GLOBAL --- */
+a {
+    text-decoration: none;
+}
+
+/* --- MAIN LAYOUT (#Univer) --- */
+#Univer {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+    gap: 30px;
+}
+
+/* --- COLONNE GAUCHE (#Martin) --- */
+#Martin {
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#Martin h1 {
+    font-size: 26px;
+    color: #002349;
+}
+
+.Bernard {
+    width: 100%;
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.Thomas {
+    padding: 12px 0;
+    display: flex;
+    align-items: center;
+    color: #888;
+    font-size: 14px;
+}
+
+.Thomas.actif {
+    color: #002349;
+    font-weight: bold;
+}
+
+.Thomas p {
+    font-weight: bold;
+    color: #000000;
+}
+
+.Thomas samp {
+    font-weight: bold;
+    color: #0d0d7e;
+}
+
+.cercle {
+    width: 25px;
+    height: 25px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+
+.actif .cercle {
+    background-color: #11539a;
+    color: white;
+    border-color: #002349;
+}
+
+#Dubois {
+    width: 100%;
+    background-color: #000000;
+    color: white;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+#concet {
+    height: 40px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+#concet button {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    background-color: #002349;
+    color: white;
+    font-weight: bold;
+}
+
+/* --- COLONNE DROITE (#Robert) --- */
+#Robert {
+    width: 68%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.Richard,
+.juniore,
+.Bernard_Junior,
+.Bernard_flex {
+    width: 100%;
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.stitre,
+.sous-titre {
+    font-size: 18px;
+    color: #333;
+    font-weight: 600;
+}
+
+/* FORMULAIRES & INPUTS */
+.Durand_DIC,
+.Durand {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.Petit {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 100%;
+}
+
+.full-width {
+    grid-column: span 2;
+}
+
+.Durand_DIC label,
+.Durand label,
+.Durand_Triplet label {
+    font-size: 13px;
+    font-weight: bold;
+    color: #333;
+}
+
+.Durand_DIC input,
+.Durand input,
+.Durand select,
+.Durand_Triplet input {
+    width: 100%;
+    height: 42px;
+    padding: 5px 12px;
+    border: 1.5px solid #eeeeee;
+    border-radius: 6px;
+    color: #333;
+    font-size: 14px;
+    outline: none;
+}
+
+/* BOUTONS TRANSACTION (Vente / Location) */
+.noonno {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+}
+
+.noonno a {
+    flex: 1;
+}
+
+.noonno button {
+    height: 42px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    background-color: #f4f7f9;
+    color: #333;
+}
+
+.unique button {
+    background-color: #a3bffa;
+    color: #002349;
+}
+
+/* CERTIFICATION ACD SECTION */
+#Moreau {
+    width: 100%;
+    background-color: #eafaf1;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+#Moreau .text p {
+    font-size: 13px;
+    color: #555;
+    margin-top: 4px;
+}
+
+.btn-vert {
+    height: 42px;
+    background-color: #1e8449;
+    color: white;
+    border: none;
+    padding: 0 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+/* CARACTÉRISTIQUES (TRIO) & COMMODITÉS */
+.Trio {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 100%;
+}
+
+.wilsone {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.wilsone h3 {
+    font-size: 15px;
+    color: #555;
+    text-align: left;
+}
+
+.Commodites_Grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 15px;
+    width: 100%;
+}
+
+.Commodite_Case {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+}
+
+.Commodite_Case input {
+    width: 18px;
+    height: 18px;
+}
+
+/* MÉDIAS & PHOTOS */
+.Bernard_flex span {
+    font-size: 12px;
+    color: #888;
+}
+
+.Grille_Photos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.Photo_Carre {
+    aspect-ratio: 4 / 3;
+    background-color: #7c787820;
+    border-radius: 8px;
+    border: 2px dashed #ccc;
+    cursor: pointer;
+}
+
+/* BOUTONS ACTIONS FINALES */
+#Roux {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    width: 100%;
+}
+
+.Morel {
+    height: 48px;
+    padding: 0 25px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.Morel.Blanc {
+    background-color: transparent;
+    color: #333;
+    border: 1px solid #ccc;
+}
+
+.Morel.orange {
+    background-color: #ff8c00;
+    color: white;
+    border: none;
+}
+
+/* --- FOOTER --- */
+
+
+/* 
+   MEDIA QUERIES (REND LE CODE RESPONSIVE POUR TOUTES LES TAILLES D'ÉCRANS)
+  */
+
+@media (max-width: 1024px) {
+    #Univer {
+        flex-direction: column;
+        width: 95%;
+    }
+
+    #Martin {
+        width: 100%;
+    }
+
+    .Bernard {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        height: auto;
+        gap: 10px;
+    }
+
+    #Robert {
+        width: 100%;
+    }
+
+    .ConteneurPrincipal {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .nav-bas {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .Petit {
+        grid-template-columns: 1fr;
+    }
+
+    .full-width {
+        grid-column: span 1;
+    }
+
+    .Bernard {
+        grid-template-columns: 1fr;
+    }
+
+    #Moreau {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .btn-vert {
+        width: 100%;
+    }
+
+    .Trio {
+        grid-template-columns: 1fr;
+    }
+
+    .Grille_Photos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .ConteneurPrincipal {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .ReseauxSociaux {
+        justify-content: center;
+    }
+
+    #Roux {
+        flex-direction: column-reverse;
+    }
+
+    .Morel {
+        width: 100%;
+    }
+}
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+    position: relative;
+}
+

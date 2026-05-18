@@ -1,0 +1,745 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+    position: relative;
+    min-height: 100vh;
+    background-color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* --- HEADER --- */
+header {
+    min-height: 90px;
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+
+#Logo {
+    height: 70px;
+    width: auto;
+}
+
+#Logo img {
+    height: 100%;
+    width: auto;
+}
+
+.nav-bas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-bas h3 a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 15px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+
+#Connexion {
+    width: auto;
+}
+
+#Connexion button {
+    padding: 12px 24px;
+    background-color: #002349;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* --- STYLE MENU BURGER (Invisible sur PC) --- */
+#openBtn {
+    display: none;
+    text-decoration: none;
+}
+
+.sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: -250px;
+    background-color: #f8f9fa;
+    padding-top: 60px;
+    box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: left 0.4s ease;
+}
+
+.sidenav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.sidenav a {
+    padding: 15px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #333;
+    display: block;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #d97706;
+    background-color: #eee;
+}
+
+.sidenav.active {
+    left: 0;
+  
+}
+
+.sidenav .close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 36px;
+    color: #000;
+    cursor: pointer;
+}
+
+.burger-icon span {
+    display: block;
+    width: 30px;
+    height: 4px;
+    background-color: #002349;
+    margin: 5px 0;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+/* --- ACCUEIL --- */
+#Acceuil {
+    min-height: 600px;
+    width: 100%;
+    background-image: url('https://images.unsplash.com/photo-1582407947304-fd86f028f716?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    margin-top: 10px;
+}
+
+#flexboxi {
+    height: 100%;
+    min-height: 600px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+#flexboxi h1 {
+    font-size: 45px;
+    width: 80%;
+    max-width: 800px;
+    margin-bottom: 20px;
+}
+
+#flexboxi p {
+    font-size: 19px;
+    width: 80%;
+    max-width: 600px;
+    margin-bottom: 40px;
+}
+
+#Barre_Recherche {
+    width: 90%;
+    max-width: 1100px;
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    gap: 15px;
+}
+
+.input_choix,
+.Choix {
+    width: 22%;
+    min-width: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+
+.input_choix label,
+.Choix label {
+    color: #000b1a;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.input_choix select,
+.Choix select,
+.Choix input {
+    font-size: 15px;
+    font-weight: bold;
+    color: #002349;
+    border: none;
+    outline: none;
+    background: none;
+    width: 100%;
+    padding: 5px 0;
+}
+
+#Bouton-Recherche {
+    width: 15%;
+    min-width: 140px;
+    height: 45px;
+}
+
+#Bouton-Recherche button {
+    height: 100%;
+    width: 100%;
+    background-color: #000b1a;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#Bouton-Recherche button:hover {
+    background-color: #002349;
+}
+
+/* --- SECTION CONFIANCE --- */
+#Section_li {
+    width: 100%;
+    padding: 60px 5%;
+    background-color: #f9fafb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#Con_TEXTE {
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#Con_TEXTE h2 {
+    font-size: 32px;
+    color: #111827;
+    margin-bottom: 15px;
+}
+
+#Con_TEXTE p {
+    font-size: 16px;
+    color: #6b7280;
+    line-height: 1.5;
+}
+
+#LE_Cards {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.page_texte {
+    min-height: 280px;
+    width: 30%;
+    min-width: 280px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.Icone {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    background-color: #0023491a;
+    color: #002349;
+}
+
+.page_texte h3 {
+    font-size: 36px;
+    color: #111827;
+    margin-top: 12px;
+}
+
+.page_texte h4 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #111827;
+}
+
+.page_texte p {
+    font-size: 14px;
+    color: #6b7280;
+}
+
+/* --- SECTION ANNONCES --- */
+#Annonces {
+    width: 100%;
+    padding: 60px 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#Annonces_TEXTE {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+#Textes-Entete h2 {
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+#Textes-Entete p {
+    font-size: 16px;
+    color: #666;
+}
+
+#Lien-Catalogue {
+    font-size: 14px;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#box_Annonces {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.Grand_box {
+    width: 31%;
+    min-width: 300px;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    overflow: hidden;
+}
+
+.Image_fix {
+    height: 220px;
+    width: 100%;
+    position: relative;
+}
+
+.Image_fix img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.acteur-Tag {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: white;
+    padding: 5px 12px;
+    border-radius: 8px;
+    font-size: 10px;
+    font-weight: bold;
+    z-index: 2;
+}
+
+.filtre-ACD {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: #065f46;
+    color: #d1fae5;
+    padding: 5px 12px;
+    border-radius: 8px;
+    font-size: 10px;
+    font-weight: bold;
+    z-index: 2;
+}
+
+.Infos-text {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.TEXTETE h3 {
+    font-size: 18px;
+    color: #111827;
+}
+
+.Localisation {
+    font-size: 14px;
+    color: #555;
+    margin: 10px 0;
+}
+
+.detaille {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-size: 13px;
+    color: #666;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.Prix {
+    font-size: 18px;
+    font-weight: bold;
+    color: #002349;
+}
+
+.Prix small {
+    font-size: 10px;
+    color: #666;
+}
+
+.Btn-Consulter {
+    padding: 10px 15px;
+    background-color: #000b1a;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 13px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.Btn-Consulter:hover {
+    background-color: #002349;
+}
+
+#N_guessan {
+    width: 90%;
+    max-width: 1000px;
+    background-color: #010101;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+    margin: 40px auto;
+    padding: 40px 20px;
+}
+
+.Bamba {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Diomande {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.Doumbia {
+    width: 100%;
+    max-width: 650px;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #ccc;
+}
+
+.Cisse {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+#Diarrassouba {
+    padding: 15px 25px;
+    background-color: #d97706;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+
+#Dosso {
+    padding: 15px 25px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 12px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+
+
+#Dosso:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* --- FOOTER --- */
+#PiedDePage {
+    width: 100%;
+    background-color: #FFFFFF;
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid #E0E0E0;
+    margin-top: 60px;
+    padding: 60px 5px 20px 5px;
+}
+
+.ConteneurPrincipal {
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.N_guessan_Section {
+    width: 25%;
+    min-width: 250px;
+}
+
+.LOGZO {
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+.LOGZO img {
+    height: 100%;
+}
+
+.Description {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+.ReseauxSociaux {
+    display: flex;
+    gap: 10px;
+}
+
+.RondSocial {
+    height: 35px;
+    width: 35px;
+    background-color: #000000;
+    border-radius: 50%;
+}
+
+.Bamba_Colonne,
+.Diomande_Colonne,
+.Cisse_Colonne {
+    width: 20%;
+    min-width: 180px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.Bamba_Colonne h3,
+.Diomande_Colonne h3,
+.Cisse_Colonne h3 {
+    font-size: 18px;
+    color: #002349;
+}
+
+.Bamba_Colonne ul,
+.Diomande_Colonne ul,
+.Cisse_Colonne ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.Bamba_Colonne ul li,
+.Diomande_Colonne ul li,
+.Cisse_Colonne ul li {
+    font-size: 14px;
+    color: #555;
+    cursor: pointer;
+}
+
+
+
+#lolar {
+    width: 90%;
+    max-width: 1200px;
+    border-top: 1px solid #EEEEEE;
+    padding-top: 20px;
+    text-align: center;
+}
+
+#lolar p {
+    font-size: 13px;
+    color: #777;
+}
+
+/* --- MEDIA QUERIES --- */
+@media screen and (max-width: 1024px) {
+    .nav-bas {
+        gap: 15px;
+    }
+
+    .nav-bas h3 a {
+        font-size: 13px;
+    }
+
+    .Grand_box {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 15px 5%;
+    }
+
+    .nav-bas,
+    #Connexion {
+        display: none !important;
+
+    }
+
+    #openBtn {
+        display: block;
+
+    }
+
+    #flexboxi h1 {
+        font-size: 32px;
+    }
+
+    #Barre_Recherche {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .input_choix,
+    .Choix,
+    #Bouton-Recherche {
+        width: 100%;
+    }
+
+    .page_texte {
+        width: 100%;
+    }
+
+    .Grand_box {
+        width: 100%;
+    }
+
+    .ConteneurPrincipal {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .N_guessan_Section,
+    .Bamba_Colonne,
+    .Diomande_Colonne,
+    .Cisse_Colonne {
+        width: 100%;
+        align-items: center;
+    }
+
+    .ReseauxSociaux {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #flexboxi h1 {
+        font-size: 26px;
+    }
+
+    .Diomande {
+        font-size: 24px;
+    }
+
+    .Doumbia {
+        font-size: 14px;
+    }
+
+    #Annonces_TEXTE {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+

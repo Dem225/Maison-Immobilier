@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IVOIRE_IMMO</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/png" href="./IMAGE/LOGO.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="./menu.js"></script>
+</head>
+
+<body>
+    <header>
+        <div id="Logo">
+            <img src="./IMAGE/LOGO.png" alt="Logo">
+        </div>
+        <div class="nav-bas">
+            <h3><a href="" class="active">TROUVER UN BIEN</a></h3>
+            <h3><a href="./ Mettre_en _ocation.html"  >METTRE EN LOCATION</a></h3>
+            <h3><a href="./evaluation.html">ÉVALUER MON BIEN</a></h3>
+            <h3><a href="./GUIDE_FONCIER.html">GUIDE FONCIER</a></h3>
+        </div>
+
+        <a href="./Connexion.html" id="Connexion">
+            <button>SE CONNECTER</button>
+        </a>
+
+        <a href="#" id="openBtn" class="burger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+
+        <!-- MENU LATÉRAL BURGER -->
+        <div id="mySidenav" class="sidenav">
+            <a id="closeBtn" href="#" class="close">×</a>
+            <ul>
+                <li><a href="" class="active">TROUVER UN BIEN</a></li>
+                <li><a href="./ Mettre_en _ocation.html">METTRE EN LOCATION</a></li>
+                <li><a href="./evaluation.html">ÉVALUER MON BIEN</a></li>
+                <li><a href="./GUIDE_FONCIER.html">GUIDE FONCIER</a></li>
+                <li><a href="./Connexion.html" style="color: #002349; font-weight: bold;">SE CONNECTER</a></li>
+            </ul>
+                <a href="./Connexion.html" id="Connexion">
+            <button>SE CONNECTER</button>
+        </a>
+        </div>
+    </header>
+
+    <section id="Acceuil">
+        <div id="flexboxi">
+            <h1>Trouvez votre futur foyer en Côte d'Ivoire</h1>
+            <p>Accédez aux meilleures opportunités immobilières avec la garantie de certification ACD.</p>
+
+            <div id="Barre_Recherche">
+                <div class="input_choix">
+                    <label>VILLE</label>
+                    <select>
+                        <option value="abengourou">Abengourou</option>
+                        <option value="abidjan">Abidjan</option>
+                        <option value="adzoppe">Adzopé</option>
+                        <option value="bondoukou">Bondoukou</option>
+                        <option value="bouafle">Bouaflé</option>
+                        <option value="bouake">Bouaké</option>
+                        <option value="dabou">Dabou</option>
+                        <option value="daloa">Daloa</option>
+                        <option value="danane">Danané</option>
+                        <option value="divo">Divo</option>
+                        <option value="duekoue">Duékoué</option>
+                        <option value="ferkessedougou">Ferkessédougou</option>
+                        <option value="gagnoa">Gagnoa</option>
+                        <option value="grand-bassam">Grand-Bassam</option>
+                        <option value="guiglo">Guiglo</option>
+                        <option value="katiola">Katiola</option>
+                        <option value="korhogo">Korhogo</option>
+                        <option value="man">Man</option>
+                        <option value="san-pedro">San Pedro</option>
+                        <option value="soubre">Soubré</option>
+                        <option value="yamoussoukro">Yamoussoukro</option>
+                        <option value="zebi">Zebi</option>
+                    </select>
+                </div>
+
+                <div class="Choix">
+                    <label>QUARTIER</label>
+                    <input type="text" placeholder="Cocody, Plateau...">
+                </div>
+
+                <div class="Choix">
+                    <label>BUDGET (FCFA)</label>
+                    <input type="number" placeholder="500 000">
+                </div>
+
+                <div class="Choix">
+                    <label>TRANSACTION</label>
+                    <select>
+                        <option>Location</option>
+                        <option>Vente</option>
+                    </select>
+                </div>
+
+                <div id="Bouton-Recherche">
+                    <button>Rechercher</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Section_li">
+        <div id="Con_TEXTE">
+            <h2>Un réseau de confiance</h2>
+            <p>IVOIRE TOIT s'engage pour la transparence et la sécurité de chaque transaction immobilière sur le
+                territoire ivoirien.</p>
+        </div>
+
+        <div id="LE_Cards">
+            <div class="page_texte">
+                <div class="Icone"> <i class="fa-brands fa-optin-monster"></i> </div>
+                <h3>500+</h3>
+                <h4>Agences vérifiées</h4>
+                <p>Toutes nos agences partenaires sont auditées pour garantir leur professionnalisme.</p>
+            </div>
+
+            <div class="page_texte">
+                <div class="Icone"> <i class="fa-solid fa-bullhorn"></i> </div>
+                <h3>2000+</h3>
+                <h4>Annonces certifiées</h4>
+                <p>Chaque bien publié fait l'objet d'une vérification rigoureuse des documents officiels.</p>
+            </div>
+
+            <div class="page_texte">
+                <div class="Icone"> <i class="fa-solid fa-shop-lock"></i> </div>
+                <h3>10k+</h3>
+                <h4>Ventes (sécurisées)</h4>
+                <p>We accompagnons nos clients jusqu'à la signature finale chez le notaire.</p>
+            </div>
+        </div>
+    </section>
+
+    <main id="Annonces">
+        <div id="Annonces_TEXTE">
+            <div id="Textes-Entete">
+                <h2>Annonces à la une</h2>
+                <p>Une sélection exclusive des biens les plus prisés du moment.</p>
+            </div>
+            <a href="#" id="Lien-Catalogue">Découvrir tout le catalogue →</a>
+        </div>
+
+        <div id="box_Annonces">
+            <!-- Carte 1 -->
+            <div class="Grand_box">
+                <div class="Image_fix">
+                    <span class="acteur-Tag">LOCATION</span>
+                    <span class="filtre-ACD">ACD VÉRIFIÉ</span>
+                    <img src="./IMAGE/Maision_2.jpeg" alt="Villa">
+                </div>
+                <div class="Infos-text">
+                    <div class="TEXTETE">
+                        <h3>Villa Moderne 5 Pièces</h3>
+                    </div>
+                    <p class="Localisation">Cocody, Ambassade</p>
+                    <div class="detaille">
+                        <span>Chambre : 4</span>
+                        <span>Douche : 3</span>
+                        <span>Superficie : 450 m²</span>
+                    </div>
+                    <div class="info">
+                        <span class="Prix">1.200.000 <small>FCFA/MOIS</small></span>
+                        <a href="./GUIDE_FONCIER.html" class="Btn-Consulter">Consulter</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carte 2 -->
+            <div class="Grand_box">
+                <div class="Image_fix">
+                    <span class="acteur-Tag">LOCATION</span>
+                    <span class="filtre-ACD">ACD VÉRIFIÉ</span>
+                    <img src="./IMAGE/Maision_1.jpeg" alt="Villa">
+                </div>
+                <div class="Infos-text">
+                    <div class="TEXTETE">
+                        <h3>Villa Moderne 5 Pièces</h3>
+                    </div>
+                    <p class="Localisation">Cocody, Ambassade</p>
+                    <div class="detaille">
+                        <span>Chambre : 4</span>
+                        <span>Douche : 3</span>
+                        <span>Superficie : 450 m²</span>
+                    </div>
+                    <div class="info">
+                        <span class="Prix">1.200.000 <small>FCFA/MOIS</small></span>
+                        <a href="./GUIDE_FONCIER.html" class="Btn-Consulter">Consulter</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carte 3 -->
+            <div class="Grand_box">
+                <div class="Image_fix">
+                    <span class="acteur-Tag">VENTE</span>
+                    <span class="filtre-ACD">ACD VÉRIFIÉ</span>
+                    <img src="./IMAGE/Maision_3.jpeg" alt="Villa">
+                </div>
+                <div class="Infos-text">
+                    <div class="TEXTETE">
+                        <h3>Villa Moderne 5 Pièces</h3>
+                    </div>
+                    <p class="Localisation">Cocody, Ambassade</p>
+                    <div class="detaille">
+                        <span>Chambre : 4</span>
+                        <span>Douche : 3</span>
+                        <span>Superficie : 450 m²</span>
+                    </div>
+                    <div class="info">
+                        <span class="Prix">30.000.000 <small>FCFA</small></span>
+                        <a href="./GUIDE_FONCIER.html" class="Btn-Consulter">Consulter</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="N_guessan">
+        <div class="Bamba">
+            <h1 class="Diomande">Devenir Propriétaire en toute sécurité</h1>
+            <p class="Doumbia">
+                Bénéficiez de l'accompagnement d'experts pour vos investissements immobiliers.
+                Nous assurons la vérification systématique des titres de propriété (ACD)
+                pour vous offrir une tranquillité d'esprit totale.
+            </p>
+            <div class="Cisse">
+                <button id="Diarrassouba">Prendre rendez-vous expert</button>
+                <button id="Dosso">Consulter le guide Foncier</button>
+            </div>
+        </div>
+    </div>
+
+    <footer id="PiedDePage">
+        <div class="ConteneurPrincipal">
+            <div class="N_guessan_Section">
+                <div class="LOGZO">
+                    <img src="./IMAGE/LOGO.png" alt="Ivoire Toit">
+                </div>
+                <p class="Description">Le premier portail immobilier certifié en Côte d'Ivoire. Sécurité, Transparence,
+                    Modernité.</p>
+                <div class="ReseauxSociaux">
+                    <div class="RondSocial"></div>
+                    <div class="RondSocial"></div>
+                </div>
+            </div>
+
+            <div class="Bamba_Colonne">
+                <h3>Plateforme</h3>
+                <ul>
+                    <li>Trouver un bien</li>
+                    <li>Mettre en location</li>
+                    <li>Évaluer mon bien</li>
+                    <li>Agences partenaires</li>
+                </ul>
+            </div>
+
+            <div class="Diomande_Colonne">
+                <h3>Ressources</h3>
+                <ul>
+                    <li>Tout savoir sur l'ACD</li>
+                    <li>Prix du marché</li>
+                    <li>Guide Foncier</li>
+                    <li>Blog immobilier</li>
+                </ul>
+            </div>
+
+            <div class="Cisse_Colonne">
+                <h3>Contact</h3>
+                <ul>
+                    <li>+225 01 40 43 53 50</li>
+                    <li>OUIUGK@gamil.com</li>
+                    <li>Platea</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="lolar">
+            <p>© 2024 IVOIRE Immobilier Certifié. Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
