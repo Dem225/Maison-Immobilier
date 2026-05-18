@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./SECONNECTER.css">
     <link rel="icon" type="image/png" href="./IMAGE/LOGO.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script src="./menu.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
@@ -20,7 +20,7 @@
         </div>
         <div class="nav-bas">
             <h3><a href="./index.html">TROUVER UN BIEN</a></h3>
-            <h3><a href="./ Mettre_en _ocation.html">METTRE EN LOCATION</a></h3>
+            <h3><a href="./Mettre_en_location.html">METTRE EN LOCATION</a></h3>
             <h3><a href="./evaluation.html">ÉVALUER MON BIEN</a></h3>
             <h3><a href="./GUIDE_FONCIER.html">GUIDE FONCIER</a></h3>
         </div>
@@ -41,29 +41,28 @@
             <a id="closeBtn" href="#" class="close">×</a>
             <ul>
                 <li><a href="./index.html">TROUVER UN BIEN</a></li>
-                <li><a href="./ Mettre_en _ocation.html">METTRE EN LOCATION</a></li>
+                <li><a href="./Mettre_en_location.html">METTRE EN LOCATION</a></li>
                 <li><a href="./evaluation.html">ÉVALUER MON BIEN</a></li>
                 <li><a href="./GUIDE_FONCIER.html">GUIDE FONCIER</a></li>
             </ul>
-            
         </div>
     </header>
 
-   
     <div class="Gnamien-cadre">
         <div class="Koffi-badge">
-          <img src="./IMAGE/LOGO.png" alt="">
+            <img src="./IMAGE/LOGO.png" alt="Logo Ivoire Toit">
         </div>
 
         <h2 class="Bakayoko-titre">Connexion</h2>
         <p class="Diallo-soustitre">Heureux de vous revoir sur Ivoire Toit.</p>
 
-        <form>
+        <!-- Correction ici : Ajout d'une méthode POST requise pour la sécurité des données -->
+        <form method="POST" action="">
             <div class="Loukou-bloc">
                 <label class="Kouadio-label">Adresse Email</label>
                 <div class="Traore-champ">
                     <i class="fa-regular fa-envelope Kone-icone"></i>
-                    <input type="email" placeholder="nom@exemple.ci" class="Ouattara-input" required>
+                    <input type="email" name="email" placeholder="nom@exemple.ci" class="Ouattara-input" required>
                 </div>
             </div>
 
@@ -74,7 +73,7 @@
                 </div>
                 <div class="Traore-champ">
                     <i class="fa-solid fa-lock Kone-icone"></i>
-                    <input type="password" placeholder="••••••••" class="Ouattara-input" required>
+                    <input type="password" name="password" placeholder="••••••••" class="Ouattara-input" required>
                 </div>
             </div>
 
@@ -105,7 +104,7 @@
         </p>
     </div>
 
-    <!-- Bouton support renommé Gohou -->
+    <!-- Bouton support -->
     <div class="Gohou-support">
         <i class="fa-solid fa-headset"></i>
     </div>

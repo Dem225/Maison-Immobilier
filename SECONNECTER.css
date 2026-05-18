@@ -68,9 +68,6 @@ header {
     cursor: pointer;
 }
 
-
-
-
 #openBtn {
     display: none;
 }
@@ -124,9 +121,6 @@ header {
     margin-bottom: 5px;
 }
 
-
-
-
 /* --- BLOC PRINCIPAL GNAMIEN --- */
 .Gnamien-cadre {
     width: 100%;
@@ -149,10 +143,12 @@ header {
     align-items: center;
     font-size: 30px; 
 }
-.Koffi-badge img{
+
+.Koffi-badge img {
     height: 100%;
     width: 100%;
 }
+
 .Bakayoko-titre {
     font-size: 22px;
     font-weight: bold;
@@ -364,5 +360,3 @@ header {
         width: 100%;
     }
 }
-
-
