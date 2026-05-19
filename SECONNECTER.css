@@ -50,9 +50,6 @@ header {
     transition: color 0.3s;
 }
 
-.nav-bas h3 a:hover {
-    color: #d97706;
-}
 
 #Connexion {
     text-decoration: none;
@@ -160,14 +157,14 @@ header {
     object-fit: cover;
 }
 
-.Bakayoko-titre {
+.Baka{
     font-size: 22px;
     font-weight: bold;
     color: #000000;
     margin-bottom: 10px;
 }
 
-.Diallo-soustitre {
+.Dial {
     font-size: 15px;
     color: #4a5568;
     margin-bottom: 35px;
@@ -207,7 +204,7 @@ header {
     opacity: 0.7;
 }
 
-.Traore-champ {
+.champ {
     width: 100%;
     height: 50px;
     position: relative;
@@ -252,7 +249,7 @@ header {
 }
 
 /* --- BOUTON CONNEXION --- */
-.Fofana-bouton {
+.Fonuton {
     width: 100%;
     height: 50px;
     background-color: #051126;
@@ -271,19 +268,20 @@ header {
     font-family: Arial, sans-serif;
 }
 
-.Fofana-bouton:hover {
+.Fonuton:hover {
     background-color: #0a2447;
 }
 
 /* --- SÉPARATEUR --- */
-.Yao-separateur {
+.Yddddd {
     width: 100%;
     height: 1px;
     background-color: #e2e8f0;
     margin: 35px 0;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items:   center
+   
 }
 
 .Meite-texte {
@@ -400,9 +398,9 @@ header {
 }
 
 
-/* ==========================================================================
+/* 
    RESPONSIVE
-   ========================================================================== */
+*/
 
 /* --- Tablettes (max 1024px) --- */
 @media screen and (max-width: 1024px) {
@@ -440,11 +438,11 @@ header {
         padding: 0 25px;
     }
 
-    .Bakayoko-titre {
+    .Baka {
         font-size: 20px;
     }
 
-    .Diallo-soustitre {
+    .Dial {
         font-size: 14px;
         margin-bottom: 25px;
     }
