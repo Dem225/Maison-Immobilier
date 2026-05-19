@@ -280,7 +280,7 @@ a {
 /* CERTIFICATION ACD SECTION */
 #Moreau {
     width: 100%;
-    background-color: #eafaf1;
+    background-color: #faf6f6;
     border-radius: 10px;
     padding: 20px;
     display: flex;
@@ -297,7 +297,7 @@ a {
 
 .btn-vert {
     height: 42px;
-    background-color: #1e8449;
+    background-color: #000000;
     color: white;
     border: none;
     padding: 0 20px;
@@ -360,10 +360,11 @@ a {
 }
 
 .Photo_Carre {
-    aspect-ratio: 4 / 3;
+    height: 120px;
+    width: 150px;
     background-color: #7c787820;
     border-radius: 8px;
-    border: 2px dashed #ccc;
+    border: 2px solid #ccc;
     cursor: pointer;
 }
 
