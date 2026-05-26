@@ -22,3 +22,17 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
+
+// Marqueur de page active — fonctionne sur toutes les pages
+document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('.nav-bas a, .sidenav a').forEach(link => {
+        const linkPath = new URL(link.href, location.origin).pathname;
+        const currentPath = location.pathname;
+
+        if (linkPath === currentPath ||
+           (currentPath === '/' && linkPath.includes('index'))) {
+            link.classList.add('active');
+        }
+    });
+});
+

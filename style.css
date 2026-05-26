@@ -744,3 +744,45 @@ header {
 
 
 
+
+.nav-bas a {
+    color: rgba(255,255,255,0.7);
+    text-decoration: none;
+    padding: 6px 0;
+    position: relative;
+    transition: color 0.2s;
+}
+.nav-bas a.active {
+    color: #000000;
+}
+.nav-bas a.active::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: #e8a422; 
+    border-radius: 2px;
+} 
+
+
+#mySidenav ul li a {
+    position: relative;
+    padding: 10px 16px;
+    border-radius: 12px;
+    transition: background 0.2s ease;
+    display: block;
+}
+
+#mySidenav ul li a.active {
+    color: #040404;        
+    font-weight: bold;
+    background: rgba(109, 187, 211, 0.15);
+    border-radius: 12px;
+}
+
+/* Supprime l'ancien petit point */
+#mySidenav ul li a.active::before {
+    content: none;
+}

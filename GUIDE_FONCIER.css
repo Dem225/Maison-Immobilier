@@ -591,3 +591,26 @@ body {
     /* Empêche le site de bouger à gauche ou à droite */
     position: relative;
 }
+
+.nav-bas a {
+    color: rgba(255,255,255,0.7);
+    text-decoration: none;
+    padding: 6px 0;
+    position: relative;
+    transition: color 0.2s;
+}
+.nav-bas a.active {
+    color: #000000;
+}
+.nav-bas a.active::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: #000000; 
+    border-radius: 2px;
+} 
+
+
